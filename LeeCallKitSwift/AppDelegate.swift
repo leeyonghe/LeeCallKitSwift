@@ -46,6 +46,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PKPushRegistryDelegate, U
     func pushRegistry(_ registry: PKPushRegistry, didUpdate pushCredentials: PKPushCredentials, for type: PKPushType) {
         
     }
-
+    
+    func providerDidReset(_ provider: CXProvider) {
+        
+    }
 
 }
