@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		735EF22C268E04C700DC0682 /* CallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735EF22B268E04C700DC0682 /* CallKit.framework */; };
 		738A6D89268E01EB00824243 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738A6D88268E01EB00824243 /* AppDelegate.swift */; };
 		738A6D8B268E01EB00824243 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738A6D8A268E01EB00824243 /* SceneDelegate.swift */; };
 		738A6D8D268E01EB00824243 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738A6D8C268E01EB00824243 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		735EF22B268E04C700DC0682 /* CallKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CallKit.framework; path = System/Library/Frameworks/CallKit.framework; sourceTree = SDKROOT; };
+		735EF22D268E071E00DC0682 /* LeeCallKitSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LeeCallKitSwift.entitlements; sourceTree = "<group>"; };
 		738A6D85268E01EB00824243 /* LeeCallKitSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeeCallKitSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		738A6D88268E01EB00824243 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		738A6D8A268E01EB00824243 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +34,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				735EF22C268E04C700DC0682 /* CallKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		735EF22A268E04C700DC0682 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				735EF22B268E04C700DC0682 /* CallKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		738A6D7C268E01EB00824243 = {
 			isa = PBXGroup;
 			children = (
 				738A6D87268E01EB00824243 /* LeeCallKitSwift */,
 				738A6D86268E01EB00824243 /* Products */,
+				735EF22A268E04C700DC0682 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +69,7 @@
 		738A6D87268E01EB00824243 /* LeeCallKitSwift */ = {
 			isa = PBXGroup;
 			children = (
+				735EF22D268E071E00DC0682 /* LeeCallKitSwift.entitlements */,
 				738A6D88268E01EB00824243 /* AppDelegate.swift */,
 				738A6D8A268E01EB00824243 /* SceneDelegate.swift */,
 				738A6D8C268E01EB00824243 /* ViewController.swift */,
@@ -286,6 +300,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LeeCallKitSwift/LeeCallKitSwift.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LeeCallKitSwift/Info.plist;
@@ -306,6 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LeeCallKitSwift/LeeCallKitSwift.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LeeCallKitSwift/Info.plist;
